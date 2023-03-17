@@ -1,0 +1,11 @@
+{
+  "short_name": "intelliBot",
+  "name": "NLP Assistant",
+  "icons": [
+    "https://i.ibb.co/SQTT0tj/bot.png"
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
