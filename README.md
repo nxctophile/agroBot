@@ -1,4 +1,4 @@
-# intelliBot - Your own guru, at your fingertips.
+# agroBot - Every info about agriculture and everything else, at your fingertips.
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/apidboy/intellibot?style=plastic)](https://github.com/ApidBoy/intelliBot)
 [![GitHub license](https://img.shields.io/github/license/apidboy/intellibot?style=plastic)](https://github.com/ApidBoy/intelliBot/blob/main/LICENSE)

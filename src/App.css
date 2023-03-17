@@ -1,145 +1,145 @@
 * {
-    font-family: 'DM Sans', sans-serif;
-    transition: .3s;
-    outline: none;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.3s;
+  outline: none;
 }
 body {
-    background: #FDF6F0;
+  background: #84a98c;
 }
 #MainSectionContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 #MainSection {
-    position: fixed;
-    height: 75%;
-    margin-bottom: 70px;
-    width: 460px;
-    /* box-shadow: 0 0 30px #f8cba6bb; */
-    box-shadow: 0 0 30px #6d5542bb;
-    /* overflow-x: hidden;
+  position: fixed;
+  height: 75%;
+  margin-bottom: 70px;
+  width: 460px;
+  /* box-shadow: 0 0 30px #f8cba6bb; */
+  box-shadow: 0 0 30px #6d5542bb;
+  /* overflow-x: hidden;
     overflow-y: scroll; */
-    /* border-radius: 15px; */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    /* padding-bottom: 59px; */
+  /* border-radius: 15px; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* padding-bottom: 59px; */
 }
 
 #sendBox {
-    width: 347px;
-    height: 40px;
-    border-radius: 20px;
-    /* border-top-left-radius: 20px;
+  width: 347px;
+  height: 40px;
+  border-radius: 20px;
+  /* border-top-left-radius: 20px;
     border-bottom-left-radius: 20px; */
-    padding-left: 15px;
-    font-size: 20px;
-    border: none;
-    box-shadow: 0 0 10px #85685173 inset;
-    /* box-shadow: 0 0 10px #ccb1ae inset; */
-    outline: none;
-    background-color: #faf2ec;
-    transition: .2s;
+  padding-left: 15px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 0 10px #85685173 inset;
+  /* box-shadow: 0 0 10px #ccb1ae inset; */
+  outline: none;
+  background-color: #faf2ec;
+  transition: 0.2s;
 }
 
 #sendBox:focus {
-    box-shadow: 0 0 5px rgba(85, 85, 85, 0.34);
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.34);
 }
 
 #sendButton {
-    font-size: 24px;
-    text-align: center;
-    box-shadow: 0 0 10px #8568517e;
-    padding: 10px 12px 10px 10px;
-    margin-left: 10px;
-    border-radius: 200px;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0 0 10px #aaa;
+  padding: 10px 12px 10px 10px;
+  margin-left: 10px;
+  border-radius: 200px;
 }
 
 #sendBoxContainer {
-    position: absolute;
-    bottom: -84px;
-    display: flex;
-    justify-content: center;
-    background-color: #F8E2CF;
-    padding: 20px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+  position: absolute;
+  bottom: -84px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8e2cf;
+  padding: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 #emptyChat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 #emptyChat > img {
-    width: 250px;
-    border-radius: 30px 30px 30px 0;
-    box-shadow: 0 0 15px #cccccc60;
+  width: 250px;
+  border-radius: 30px 30px 30px 0;
+  box-shadow: 0 0 15px #cccccc60;
 }
 
 #deletedChat {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 #deletedChat > img {
-    width: 250px;
-    margin-bottom: 20px;
-    border-radius: 30px 30px 30px 0;
-    box-shadow: 0 0 15px #cccccc60;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 30px 30px 30px 0;
+  box-shadow: 0 0 15px #cccccc60;
 }
 
 #responseContainer {
-    margin-left: 20px;
-    width: 90%;
-    overflow-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    height: 64vh;
-    overflow-y: auto;
-    padding: 10px 10px 10px 15px;
+  margin-left: 20px;
+  width: 90%;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  height: 64vh;
+  overflow-y: auto;
+  padding: 10px 10px 10px 15px;
 }
 
-
 .bubble {
-    height: fit-content;
-    width: fit-content;
-    border: 1px solid;
-    border-radius: 20px;
-    max-width: 65%;
-    padding: 8px;
-    word-wrap: break-word;
-  }
-  
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid;
+  border-radius: 20px;
+  max-width: 65%;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
 .bubble.client {
-    background: #FFE7CC;
-    align-self: flex-end;
-    margin: 5px;
-    padding: 10px;
-    color: #000;
-    border-color: transparent;
-    border-bottom-right-radius: 2px;
+  background: #bbcfc0;
+  align-self: flex-end;
+  margin: 5px;
+  padding: 10px;
+  color: #000;
+  border-color: transparent;
+  border-bottom-right-radius: 2px;
 }
 
 .bubble.server {
-    background: #facfb5;
-    padding: 10px;
-    margin: 5px 5px 5px -15px;
-    border-color: transparent;
-    border-bottom-left-radius: 2px;
+  background: #5c7f64;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 5px 5px -15px;
+  border-color: transparent;
+  border-bottom-left-radius: 2px;
 }
 
 .bubble.delete {
-    display: none;
+  display: none;
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -147,191 +147,187 @@ body {
   border-radius: 30px;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 30px;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 #topBar {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 64px;
-    background-color: #FFE7CC;
-    display: flex;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 64px;
+  background-color: #ffe7cc;
+  display: flex;
 }
 
 #profilePic {
-    width: 35px;
-    height: 35px;
-    border: 1px solid;
-    padding: 5px;
-    border-radius: 50px;
-    margin-top: 9px;
-    margin-left: 13px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: 9px;
+  margin-left: 13px;
 }
 #barText {
-    font-size: 20px;
-    margin-top: 17px;
-    margin-left: 10px;
+  font-size: 20px;
+  margin-top: 17px;
+  margin-left: 10px;
 }
 
 .barIcon {
-    font-size: 30px;
-    position: relative;
-    top: 15px;
-    left: 230px;
-    transition: .1s;
+  font-size: 30px;
+  position: relative;
+  top: 15px;
+  left: 230px;
+  transition: 0.1s;
 }
 #mode {
-    margin-right: 14px;
+  margin-right: 14px;
 }
 .barIcon:hover {
-    transform: scale(1.05);
-    text-shadow: 0 0 10px #adadad;
-    cursor: pointer;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #adadad;
+  cursor: pointer;
 }
 #tag {
-    font-size: 10px;
-    margin-left: 3px;
+  font-size: 10px;
+  margin-left: 3px;
 }
 
 #responseLoading > img {
-    width: 50px;
+  width: 50px;
 }
 #topButtonContainer {
-    position: relative;
-    right: 27px;
+  position: relative;
+  right: 27px;
 }
 
+@media only screen and (max-width: 500px) {
+  #topBar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  #MainSection {
+    width: 100vw;
+    margin-top: 120px;
+    height: 89.4vh;
+    border-radius: 0;
+    position: fixed;
+    top: -75px;
+  }
 
-@media only screen and (max-width:500px) {
-    #topBar {
-        position: fixed;
-        width: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 0;
-    }
-    #MainSection {
-        width: 100vw;
-        margin-top: 120px;
-        height: 89.4vh;
-        border-radius: 0;
-        position: fixed;
-        top: -75px;
-    }
-
-    #responseContainer {
-        margin-top: 20px;
-        margin-left: 15px;
-        height: 86vh;
-    }
-    .barIcon {
-        left: 0;
-    }
-    #sendBoxContainer {
-        border-radius: 0;
-        position: fixed;
-        width: 92vw;
-        bottom: 0;
-        height: 30px;
-        padding-top: 15px;
-        padding-bottom: 30px;
-    }
-    #sendButton {
-        margin-left: 20px;
-        margin-right: 10px;
-        padding: 10px 11px 33px;
-    }
-    #topButtonContainer {
-        position: absolute;
-        right: 20px;
-    }
-    .bubble {
-        max-width: 75%;
-    }
-}
-
-@media only screen and (max-width:500px) and (max-height:1060px) {
-    #responseContainer {
-        height: 84vh;
-    }
+  #responseContainer {
+    margin-top: 20px;
+    margin-left: 15px;
+    height: 86vh;
+  }
+  .barIcon {
+    left: 0;
+  }
+  #sendBoxContainer {
+    border-radius: 0;
+    position: fixed;
+    width: 92vw;
+    bottom: 0;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  #sendButton {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px 11px 33px;
+  }
+  #topButtonContainer {
+    position: absolute;
+    right: 20px;
+  }
+  .bubble {
+    max-width: 75%;
+  }
 }
 
-@media only screen and (max-width:500px) and (max-height:960px) {
-    #responseContainer {
-        height: 82vh;
-    }
+@media only screen and (max-width: 500px) and (max-height: 1060px) {
+  #responseContainer {
+    height: 84vh;
+  }
 }
 
-@media only screen and (max-width:500px) and (max-height:870px) {
-    #responseContainer {
-        height: 80vh;
-    }
-}
-@media only screen and (max-width:500px) and (max-height:790px) {
-    #responseContainer {
-        height: 78vh;
-    }
-}
-@media only screen and (max-width:500px) and (max-height:730px) {
-    #responseContainer {
-        height: 76vh;
-    }
+@media only screen and (max-width: 500px) and (max-height: 960px) {
+  #responseContainer {
+    height: 82vh;
+  }
 }
 
-@media only screen and (max-width:500px) and (max-height:670px) {
-    #responseContainer {
-        height: 74vh;
-    }
+@media only screen and (max-width: 500px) and (max-height: 870px) {
+  #responseContainer {
+    height: 80vh;
+  }
 }
-@media only screen and (max-width:500px) and (max-height:620px) {
-    #responseContainer {
-        height: 72vh;
-    }
+@media only screen and (max-width: 500px) and (max-height: 790px) {
+  #responseContainer {
+    height: 78vh;
+  }
 }
-@media only screen and (max-width:500px) and (max-height:580px) {
-    #responseContainer {
-        height: 70vh;
-    }
-}
-
-@media only screen and (max-width:500px) and (max-height:540px) {
-    #responseContainer {
-        height: 68vh;
-    }
-}
-@media only screen and (max-width:500px) and (max-height:500px) {
-    #responseContainer {
-        height: 66vh;
-    }
+@media only screen and (max-width: 500px) and (max-height: 730px) {
+  #responseContainer {
+    height: 76vh;
+  }
 }
 
+@media only screen and (max-width: 500px) and (max-height: 670px) {
+  #responseContainer {
+    height: 74vh;
+  }
+}
+@media only screen and (max-width: 500px) and (max-height: 620px) {
+  #responseContainer {
+    height: 72vh;
+  }
+}
+@media only screen and (max-width: 500px) and (max-height: 580px) {
+  #responseContainer {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 500px) and (max-height: 540px) {
+  #responseContainer {
+    height: 68vh;
+  }
+}
+@media only screen and (max-width: 500px) and (max-height: 500px) {
+  #responseContainer {
+    height: 66vh;
+  }
+}
 
 @media only screen and (min-width: 500px) and (max-height: 1200px) {
-    #responseContainer {
-        height: 68vh;
-    }
+  #responseContainer {
+    height: 68vh;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-height: 1050px) {
-    #responseContainer {
-        height: 67vh;
-    }
+  #responseContainer {
+    height: 67vh;
+  }
 }
 @media only screen and (min-width: 500px) and (max-height: 900px) {
-    #responseContainer {
-        height: 63vh;
-    }
+  #responseContainer {
+    height: 63vh;
+  }
 }
 @media only screen and (min-width: 500px) and (max-height: 750px) {
-    #responseContainer {
-        height: 62vh;
-    }
+  #responseContainer {
+    height: 62vh;
+  }
 }
