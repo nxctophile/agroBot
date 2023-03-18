@@ -18,6 +18,7 @@ function App() {
           response: message,
         },
       ]);
+      document.getElementById("sendBox").value = "";
       setBubbles((prevBubbles) => [
         ...prevBubbles,
         {
@@ -26,28 +27,7 @@ function App() {
         },
       ]);
     }
-    if (message.toLowerCase().includes("create") && message.toLowerCase().includes("you")) {
-      document.getElementById("sendBox").value = "";
-      setBubbles((prevBubbles) => [
-        ...prevBubbles,
-        {
-          side: "client",
-          response: message,
-        },
-      ]);
-      setResponseLoading(true);
-      setTimeout(() => {
-        setBubbles((prevBubbles) => [
-          ...prevBubbles,
-          {
-            side: "server",
-            response: "I was created by Samarth Singh Bachhotiya",
-          },
-        ]);
-        setResponseLoading(false);
-      }, 1000);
-    }
-    if (message.length > 0 && message !== "hi") {
+    if (message.length > 0 && message.toLowerCase() !== "hi") {
       setBubbles((prevBubbles) => [
         ...prevBubbles,
         {
