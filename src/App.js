@@ -10,6 +10,43 @@ function App() {
 
   const initFunction = async () => {
     const message = document.getElementById("sendBox").value;
+    if (message.toLowerCase() === "hi") {
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "client",
+          response: message,
+        },
+      ]);
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "server",
+          response: "Hi there! How can I help you?",
+        },
+      ]);
+    }
+    if (message.toLowerCase().includes("create") && message.toLowerCase().includes("you")) {
+      document.getElementById("sendBox").value = "";
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "client",
+          response: message,
+        },
+      ]);
+      setResponseLoading(true);
+      setTimeout(() => {
+        setBubbles((prevBubbles) => [
+          ...prevBubbles,
+          {
+            side: "server",
+            response: "I was created by Samarth Singh Bachhotiya",
+          },
+        ]);
+        setResponseLoading(false);
+      }, 1000);
+    }
     if (message.length > 0 && message !== "hi") {
       setBubbles((prevBubbles) => [
         ...prevBubbles,
@@ -70,6 +107,7 @@ function App() {
     sendBox.style.background = "#3d3232";
     deletedChat.style.color = "#fff";
     sendBoxContainer.style.background = "#5C3D2E";
+    mainSection.style.background = "#2d2424";
     bubbleClient.map((element) => {
       element.style.background = "#5C3D2E";
       element.style.color = "#fff";
@@ -99,17 +137,17 @@ function App() {
     );
 
     body.style.background = "#cad2c5";
-    topBar.style.background = "#5c7f64";
+    topBar.style.background = "#6A9373";
     topBar.style.color = "#fff";
     sendButton.style.color = "#fff";
     sendBox.style.color = "#000";
     sendBox.style.background = "#cad2c5";
-    sendBoxContainer.style.background = "#5c7f64";
+    sendBoxContainer.style.background = "#6A9373";
     sendBoxContainer.style.color = "#fff";
-    mainSection.style.background = "#84a98c";
+    mainSection.style.background = "#92BB9B";
     deletedChat.style.color = "#000";
     bubbleClient.map((element) => {
-      element.style.background = "#bbcfc0";
+      element.style.background = "#C5DACA";
       element.style.color = "#000";
       return 0;
     });
