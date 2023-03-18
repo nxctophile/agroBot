@@ -10,6 +10,7 @@ function App() {
 
   const initFunction = async () => {
     const message = document.getElementById("sendBox").value;
+
     if (message.toLowerCase() === "hi") {
       setBubbles((prevBubbles) => [
         ...prevBubbles,
@@ -27,7 +28,42 @@ function App() {
         },
       ]);
     }
-    if (message.length > 0 && message.toLowerCase() !== "hi") {
+    if (message.toLowerCase() === "ok" || message.toLowerCase() === "okay") {
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "client",
+          response: message,
+        },
+      ]);
+      document.getElementById("sendBox").value = "";
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "server",
+          response: "Is there any other help which I can do?",
+        },
+      ]);
+    }
+    if (message.toLowerCase() === "what") {
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "client",
+          response: message,
+        },
+      ]);
+      document.getElementById("sendBox").value = "";
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "server",
+          response: "Sorry I didn't get it, could you just elaborate your question once again?",
+        },
+      ]);
+    }
+
+    if (message.length > 0 && message.toLowerCase() !== "hi" && message.toLowerCase() !== "ok" && message.toLowerCase() !== "okay" && message.toLowerCase() !== "what") {
       setBubbles((prevBubbles) => [
         ...prevBubbles,
         {
