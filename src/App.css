@@ -63,7 +63,7 @@ body {
   bottom: -84px;
   display: flex;
   justify-content: center;
-  background-color: #6A9373;
+  background-color: #6a9373;
   padding: 20px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -109,7 +109,7 @@ body {
 .bubble {
   height: fit-content;
   width: fit-content;
-  border: 1px solid;
+  border:  none;
   border-radius: 20px;
   max-width: 65%;
   padding: 8px;
@@ -137,6 +137,11 @@ body {
 
 .bubble.delete {
   display: none;
+}
+
+.bubble image {
+  border: none;
+  border-bottom-left-radius: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -209,6 +214,15 @@ body {
   position: relative;
   right: 27px;
 }
+
+#imageContainer {
+  width: 250px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  margin-left: -20px;
+}
+
+
 
 @media only screen and (max-width: 500px) {
   #topBar {

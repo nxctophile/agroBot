@@ -58,12 +58,55 @@ function App() {
         ...prevBubbles,
         {
           side: "server",
-          response: "Sorry I didn't get it, could you just elaborate your question once again?",
+          response:
+            "Sorry I didn't get it, could you just elaborate your question once again?",
         },
       ]);
     }
 
-    if (message.length > 0 && message.toLowerCase() !== "hi" && message.toLowerCase() !== "ok" && message.toLowerCase() !== "okay" && message.toLowerCase() !== "what") {
+    if (message.toLowerCase().includes("generate") && message.toLowerCase().includes("image")) {
+      const deletedChat = document.getElementById("deletedChat");
+      deletedChat.style.display = "none";
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "client",
+          response: message,
+        },
+      ]);
+      setResponseLoading(true);
+      let imageInput = message.toLowerCase().split("generate");
+      document.getElementById("sendBox").value = "";
+      let response = "";
+      const { Configuration, OpenAIApi } = require("openai");
+      const configuration = new Configuration({
+        apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+      });
+      const openai = new OpenAIApi(configuration);
+      response = await openai.createImage({
+        prompt: imageInput[1],
+        n: 1,
+        size: "1024x1024",
+      });
+      setResponseLoading(false);
+      setBubbles((prevBubbles) => [
+        ...prevBubbles,
+        {
+          side: "image",
+          imageUrl: response.data.data[0].url,
+        },
+      ]);
+    }
+
+    if (
+      message.length > 0 &&
+      message.toLowerCase() !== "hi" &&
+      message.toLowerCase() !== "ok" &&
+      message.toLowerCase() !== "okay" &&
+      message.toLowerCase() !== "what" &&
+      !message.includes("generate") &&
+      !message.includes("image")
+    ) {
       setBubbles((prevBubbles) => [
         ...prevBubbles,
         {
