@@ -1,14 +1,14 @@
 # agroBot - Every info about agriculture and everything else, at your fingertips.
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/apidboy/intellibot?style=plastic)](https://github.com/ApidBoy/intelliBot)
-[![GitHub license](https://img.shields.io/github/license/apidboy/intellibot?style=plastic)](https://github.com/ApidBoy/intelliBot/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/apidboy/intellibot?style=plastic)](https://github.com/ApidBoy/intelliBot/issues)
-[![Website](https://img.shields.io/website?down_color=red&down_message=down&style=plastic&up_color=green&up_message=up&url=https%3A%2F%2Fintellibot.netlify.app)](https://intellibot.netlify.app)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/apidboy/intellibot?style=plastic)](https://github.com/ApidBoy/intelliBot)
-[![GitHub forks](https://img.shields.io/github/forks/apidboy/intellibot?style=social)](https://github.com/ApidBoy/intelliBot)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/apidboy/agrobot?style=plastic)](https://github.com/ApidBoy/agrobot)
+[![GitHub license](https://img.shields.io/github/license/apidboy/agrobot?style=plastic)](https://github.com/ApidBoy/agrobot/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/apidboy/agrobot?style=plastic)](https://github.com/ApidBoy/agrobot/issues)
+[![Website](https://img.shields.io/website?down_color=red&down_message=down&style=plastic&up_color=green&up_message=up&url=https%3A%2F%2Fagrobot-assistant.netlify.app)](https://agrobot-assistant.netlify.app)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/apidboy/agrobot?style=plastic)](https://github.com/ApidBoy/agrobot)
+[![GitHub forks](https://img.shields.io/github/forks/apidboy/agrobot?style=social)](https://github.com/ApidBoy/agrobot)
 
-intelliBot is an Open-Source web based NLP assistant which uses OpenAI API to fetch results based on entered data query. \
-[Click here](https://intellibot.netlify.app) or go to [https://intellibot.netlify.app](https://intellibot.netlify.app) to visit the intelliBot website.
+agroBot is an Open-Source web based NLP assistant which uses OpenAI API to fetch results based on entered data query. \
+[Click here](https://agrobot-assistant.netlify.app) or go to [https://agrobot-assistant.netlify.app](https://agrobot-assistant.netlify.app) to visit the intelliBot website.
 
 >[NOTE - Still in alpha development phase.]
 
