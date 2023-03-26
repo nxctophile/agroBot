@@ -24,7 +24,7 @@ function App() {
         ...prevBubbles,
         {
           side: "server",
-          response: "Hi there, How can I help you?",
+          response: "Hi there! How can I help you?",
         },
       ]);
     }
