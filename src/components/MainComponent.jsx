@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import TopBar from "./TopBar";
+import Markdown from 'react-markdown';
 
 function MainComponent(props) {
   const sendBoxRef = useRef(null);
@@ -40,18 +41,9 @@ function MainComponent(props) {
                 : "bubble server";
             return (
               <>
-                <div className={bubbleClass} key={index}>
+                <Markdown className={bubbleClass} key={index}>
                   {element.response}
-                </div>
-                {element.imageUrl && (
-                  <img
-                    key={index}
-                    id="imageContainer"
-                    className={bubbleClass}
-                    alt=""
-                    src={element.imageUrl}
-                  />
-                )}
+                </Markdown>
               </>
             );
           })}

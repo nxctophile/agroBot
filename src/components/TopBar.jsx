@@ -17,12 +17,12 @@ function TopBar(props) {
         <i
           id="mode"
           onClick={props.toggleMode}
-          class="barIcon fa-regular fa-moon"
+          className="barIcon fa-regular fa-moon"
         ></i>
         <i
           id="delete"
           onClick={props.deleteAll}
-          class="barIcon fa-regular fa-trash-can"
+          className="barIcon fa-regular fa-trash-can"
         ></i>
       </div>
     </section>
